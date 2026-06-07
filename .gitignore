@@ -1,3 +1,6 @@
 # Local Codex / agent skills
 /.codex/
 /agent-skills/
+
+# WordPress runtime uploads and generated logs
+/wp-content/uploads/
