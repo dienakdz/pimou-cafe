@@ -1,0 +1,651 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Vietnam Address Woo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Vietnam Address Woo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-02 11:13+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-region-manager.php:154
+#: includes/class-vncheckout-region-manager.php:154
+msgid "A region with that code already exists."
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1264 coolbird-vietnam-address-for-woocommerce.php:1328
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1264
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1328
+msgid "Address line 1"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:116
+#: includes/options-page.php:116
+msgid "Alepay"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:108
+#: includes/options-page.php:108
+msgid "Alepay & billing fields"
+msgstr ""
+
+#: includes/options-page.php:26
+msgid "Allow conversion to VNĐ"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:187
+msgid "Bộ lọc"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:26
+msgid "Cho phép chuyển sang VNĐ"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1349 coolbird-vietnam-address-for-woocommerce.php:1403
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1349
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1403
+msgid "Choose an option"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:141
+#: includes/options-page.php:141
+msgid ""
+"Choose how provinces, districts and wards are shown on checkout and account "
+"pages."
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:24
+msgid "Chuyển ₫ sang VNĐ"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1254
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1325
+msgid "Chọn Phường/Xã&hellip;"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1261
+msgid "Chọn xã/phường/thị trấn&hellip;"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1234 coolbird-vietnam-address-for-woocommerce.php:1305
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1234
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1305
+msgid "Company"
+msgstr ""
+
+#: includes/options-page.php:32
+msgid "Completely remove shipping method title"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:110
+#: includes/options-page.php:110
+msgid ""
+"Configure additional billing fields required by Alepay and other gateways."
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-method.php:85
+#: includes/class-vncheckout-shipping-method.php:85
+#, php-format
+msgid ""
+"Configure shipping rates by region, province, district, and ward on the <a "
+"href=\"%s\" style=\"font-weight:600\">Shipping Rates</a> page (WooCommerce → "
+"Shipping Rates)."
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:19
+#: includes/options-page.php:19
+msgid ""
+"Control currency formatting, volumetric weight and VNĐ ↔ foreign currency "
+"conversion."
+msgstr ""
+
+#: includes/options-page.php:45
+msgid "Conversion quotient. Default by Viettel Post is 6000"
+msgstr ""
+
+#: includes/options-page.php:42 includes/options-page.php:99
+msgid "Conversion rate"
+msgstr ""
+
+#: includes/options-page.php:24
+msgid "Convert ₫ to VNĐ"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1238 coolbird-vietnam-address-for-woocommerce.php:1309
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1238
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1309
+msgid "Country"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:17
+#: includes/options-page.php:17
+msgid "Currency & conversion"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-method.php:74
+#: includes/class-vncheckout-shipping-method.php:74
+msgid "Default Shipping Rate"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:999
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:999
+msgid "Delete the selected boxes?"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:438 coolbird-vietnam-address-for-woocommerce.php:515
+#: coolbird-vietnam-address-for-woocommerce.php:1122 coolbird-vietnam-address-for-woocommerce.php:1179
+#: coolbird-vietnam-address-for-woocommerce.php:1250 coolbird-vietnam-address-for-woocommerce.php:1321
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:438
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:515
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1122
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1179
+msgid "District"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1268
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1268
+msgid "Email address"
+msgstr ""
+
+#: includes/options-page.php:49
+msgid "Enable VNĐ to USD conversion"
+msgstr ""
+
+#: includes/options-page.php:51
+msgid "Enable VNĐ to USD conversion to use PayPal"
+msgstr ""
+
+#: includes/options-page.php:189
+msgid "Enable filter"
+msgstr ""
+
+#: includes/options-page.php:190
+msgid "Enable filter by province and date in order list page"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-method.php:63
+#: includes/class-vncheckout-shipping-method.php:63
+msgid "Enable this shipping method"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-method.php:61
+#: includes/class-vncheckout-shipping-method.php:61
+msgid "Enable/Disable"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:448 coolbird-vietnam-address-for-woocommerce.php:525
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:448
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:525
+msgctxt "placeholder"
+msgid "Ex: No. 20, 90 Alley"
+msgstr ""
+
+#: includes/options-page.php:102
+msgid "Exchange rate from VNĐ"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:181
+#: includes/options-page.php:181
+msgid "Extra filters for quickly finding orders by province and date."
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-method.php:76
+#: includes/class-vncheckout-shipping-method.php:76
+msgid "Fallback rate (VND) when no location rule matches."
+msgstr ""
+
+#: includes/options-page.php:187
+msgid "Filter"
+msgstr ""
+
+#: includes/admin-order-functions.php:70
+msgid "Filter by Province/City"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:4
+#: includes/options-page.php:4
+msgid ""
+"Fine-tune how Vietnamese addresses, currency conversion and advanced "
+"checkout helpers behave in your store."
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1226 coolbird-vietnam-address-for-woocommerce.php:1297
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1226
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1297
+msgid "First name"
+msgstr ""
+
+#: includes/admin-order-functions.php:62
+msgid "From Date"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:412 coolbird-vietnam-address-for-woocommerce.php:1168
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:412
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1168
+msgid "Full name"
+msgstr ""
+
+#: includes/options-page.php:163 includes/options-page.php:165
+msgid "Hide Ward/Commune field"
+msgstr ""
+
+#: includes/options-page.php:166
+msgid "Hide Ward/Commune/Town field in checkout form. Default is shown."
+msgstr ""
+
+#: includes/options-page.php:38
+msgid "Hide all other shipping methods when free shipping is available"
+msgstr ""
+
+#: includes/options-page.php:36
+msgid "Hide methods when free shipping available"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:118
+msgid "Hiển thị trường First Name"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:125
+msgid "Hiển thị trường Quốc Gia"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:132
+msgid "Hiện trường Postcode"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:170
+#: dist/woo-vietnam-checkout/includes/options-page.php:172
+msgid "KHÔNG bắt buộc nhập phường/xã"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:147
+msgid "Kiểu địa chỉ Việt Nam"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:189
+msgid "Kích hoạt bộ lọc"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:49
+msgid "Kích hoạt chuyển đổi VNĐ sang USD"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:51
+msgid "Kích hoạt chuyển đổi VNĐ sang USD để có thể sử dụng paypal"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1230 coolbird-vietnam-address-for-woocommerce.php:1301
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1230
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1301
+msgid "Last name"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:639
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:639
+msgid "Loading..."
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:32
+msgid "Loại bỏ hoàn toàn tiêu đề của phương thức vận chuyển"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:30
+msgid "Loại bỏ tiêu đề vận chuyển"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-method.php:81
+#: includes/class-vncheckout-shipping-method.php:81
+msgid "Manage Rates"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-method.php:67
+#: includes/class-vncheckout-shipping-method.php:67
+msgid "Method Title"
+msgstr ""
+
+#: includes/options-page.php:157
+msgid "New format: Province/City → Ward/Commune (District hidden)"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:637 coolbird-vietnam-address-for-woocommerce.php:979
+#: coolbird-vietnam-address-for-woocommerce.php:991 coolbird-vietnam-address-for-woocommerce.php:1006
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:637
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:979
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:991
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1006
+msgid "No value"
+msgstr ""
+
+#: includes/options-page.php:152
+msgid "Old format: Province/City → District → Ward/Commune"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:179
+#: includes/options-page.php:179
+msgid "Order management"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1271
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1271
+msgid "Phone"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:640
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:640
+msgid "Phone number does not exist"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:638
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:638
+msgid "Phone number is incorrect"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:923
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:923
+msgid "Phone number of the recipient"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1250
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1321
+msgid "Phường/Xã"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-region-manager.php:183
+#: includes/class-vncheckout-region-manager.php:183
+msgid "Predefined regions cannot be deleted."
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-region-manager.php:145
+#: includes/class-vncheckout-region-manager.php:145
+msgid "Predefined regions cannot be modified."
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:429 coolbird-vietnam-address-for-woocommerce.php:506
+#: coolbird-vietnam-address-for-woocommerce.php:1116 coolbird-vietnam-address-for-woocommerce.php:1245
+#: coolbird-vietnam-address-for-woocommerce.php:1316
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:429
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:506
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1116
+msgid "Province/City"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:486
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:486
+msgid "Recipient full name"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:487
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:487
+msgctxt "placeholder"
+msgid "Recipient full name"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:495
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:495
+msgid "Recipient phone"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:496
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:496
+msgctxt "placeholder"
+msgid "Recipient phone"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-region-manager.php:125
+#: includes/class-vncheckout-region-manager.php:125
+msgid "Region name and code are required."
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-region-manager.php:179
+#: includes/class-vncheckout-region-manager.php:179
+msgid "Region not found."
+msgstr ""
+
+#: includes/options-page.php:30
+msgid "Remove shipping title"
+msgstr ""
+
+#: includes/options-page.php:133
+msgid "Required for Alepay Tokenization payment."
+msgstr ""
+
+#: includes/options-page.php:119 includes/options-page.php:126
+msgid "Required for Alepay payment."
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:442 coolbird-vietnam-address-for-woocommerce.php:519
+#: coolbird-vietnam-address-for-woocommerce.php:1184
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:442
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:519
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1184
+msgctxt "placeholder"
+msgid "Select District"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1254 coolbird-vietnam-address-for-woocommerce.php:1325
+msgid "Select District&hellip;"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:434 coolbird-vietnam-address-for-woocommerce.php:511
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:434
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:511
+msgid "Select Province/City"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:433 coolbird-vietnam-address-for-woocommerce.php:510
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:433
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:510
+msgctxt "placeholder"
+msgid "Select Province/City"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:474 coolbird-vietnam-address-for-woocommerce.php:543
+#: coolbird-vietnam-address-for-woocommerce.php:1197
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:474
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:543
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1197
+msgctxt "placeholder"
+msgid "Select Ward/Commune"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1261
+msgid "Select Ward/Commune&hellip;"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1242 coolbird-vietnam-address-for-woocommerce.php:1313
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1242
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1313
+msgid "Select a country&hellip;"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1093
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1093
+msgid "Settings"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:933
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:933
+msgid "Shipping Phone:"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-admin.php:40
+#: dist/woo-vietnam-checkout/includes/class-coolbirdzik-shipping-admin.php:50
+#: includes/class-vncheckout-shipping-admin.php:40
+#: includes/class-coolbirdzik-shipping-admin.php:50
+msgid "Shipping Rates"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-method.php:33
+#: includes/class-vncheckout-shipping-method.php:33
+msgid ""
+"Shipping fees based on Vietnam province/district/ward, order total, and "
+"weight."
+msgstr ""
+
+#: includes/options-page.php:125
+msgid "Show Country field"
+msgstr ""
+
+#: includes/options-page.php:118
+msgid "Show First Name field"
+msgstr ""
+
+#: includes/options-page.php:132
+msgid "Show Postcode field"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:42
+#: dist/woo-vietnam-checkout/includes/options-page.php:99
+msgid "Số quy đổi"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-vnd-paypal-standard.php:82
+#: includes/class-vncheckout-vnd-paypal-standard.php:82
+#, php-format
+msgid ""
+"The prices will be converted to %1$s in the PayPal pages with the exchange "
+"rate %2$s."
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:45
+msgid "Thương số quy đổi. Mặc định theo Viettel Post là 6000"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-method.php:69
+#: includes/class-vncheckout-shipping-method.php:69
+msgid "Title displayed during checkout."
+msgstr ""
+
+#: includes/admin-order-functions.php:63
+msgid "To Date"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:413 coolbird-vietnam-address-for-woocommerce.php:1169
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:413
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1169
+msgctxt "placeholder"
+msgid "Type Full name"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:426
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:426
+msgid "Type your email"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:422
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:422
+msgid "Type your phone"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1245
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1316
+msgid "Tỉnh/thành phố"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:102
+msgid "Tỷ giá quy đổi từ VNĐ"
+msgstr ""
+
+#: includes/options-page.php:55
+msgid "VNĐ converted to currency"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:55
+msgid "VNĐ quy đổi sang tiền"
+msgstr ""
+
+#: includes/options-page.php:147
+msgid "Vietnam Address Format"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:367 coolbird-vietnam-address-for-woocommerce.php:368
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:367
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:368
+msgid "Vietnam Address Woo"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-method.php:70
+#: includes/class-vncheckout-shipping-method.php:70
+msgid "Vietnam Shipping"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-method.php:31
+#: includes/class-vncheckout-shipping-method.php:31
+msgid "Vietnam Shipping Calculator"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-vncheckout-shipping-admin.php:39
+#: dist/woo-vietnam-checkout/includes/class-coolbirdzik-shipping-admin.php:49
+#: includes/class-vncheckout-shipping-admin.php:39
+#: includes/class-coolbirdzik-shipping-admin.php:49
+msgid "Vietnam Shipping Rates"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/class-coolbirdzik-shipping-admin.php:69
+#: includes/class-coolbirdzik-shipping-admin.php:69
+msgid ""
+"Vietnam Shipping Rates: frontend assets not found. Run `npm run build` "
+"inside the frontend/ directory."
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:139
+#: includes/options-page.php:139
+msgid "Vietnam address layout"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:470 coolbird-vietnam-address-for-woocommerce.php:539
+#: coolbird-vietnam-address-for-woocommerce.php:1136 coolbird-vietnam-address-for-woocommerce.php:1192
+#: coolbird-vietnam-address-for-woocommerce.php:1257
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:470
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:539
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1136
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1192
+msgid "Ward/Commune"
+msgstr ""
+
+#: includes/options-page.php:170 includes/options-page.php:172
+msgid "Ward/Commune is NOT required"
+msgstr ""
+
+#: includes/options-page.php:173
+msgid "When Ward/Commune field is shown, it is optional."
+msgstr ""
+
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1257
+msgid "Xã/phường/thị trấn"
+msgstr ""
+
+#: coolbird-vietnam-address-for-woocommerce.php:1355
+#: dist/woo-vietnam-checkout/coolbird-vietnam-address-for-woocommerce.php:1355
+msgid "required"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:152
+msgid "Địa chỉ cũ: Tỉnh/Thành → Quận/Huyện → Phường/Xã"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:157
+msgid "Địa chỉ mới: Tỉnh/Thành → Phường/Xã (không hiển thị Quận/Huyện)"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:163
+#: dist/woo-vietnam-checkout/includes/options-page.php:165
+msgid "Ẩn mục phường/xã"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:36
+msgid "Ẩn phương thức khi có free-shipping"
+msgstr ""
+
+#: dist/woo-vietnam-checkout/includes/options-page.php:38
+msgid "Ẩn tất cả những phương thức vận chuyển khác khi có miễn phí vận chuyển"
+msgstr ""

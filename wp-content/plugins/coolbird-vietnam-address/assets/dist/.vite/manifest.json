@@ -1,0 +1,42 @@
+{
+  "_client-DktmajSW.js": {
+    "file": "chunks/client-DktmajSW.js",
+    "name": "client"
+  },
+  "_useAddressData-CKC0JZ_p.js": {
+    "file": "chunks/useAddressData-CKC0JZ_p.js",
+    "name": "useAddressData",
+    "imports": [
+      "_client-DktmajSW.js"
+    ]
+  },
+  "src/main-admin-order.tsx": {
+    "file": "admin-order.js",
+    "name": "admin-order",
+    "src": "src/main-admin-order.tsx",
+    "isEntry": true,
+    "imports": [
+      "_useAddressData-CKC0JZ_p.js",
+      "_client-DktmajSW.js"
+    ]
+  },
+  "src/main-admin-shipping.tsx": {
+    "file": "admin-shipping.js",
+    "name": "admin-shipping",
+    "src": "src/main-admin-shipping.tsx",
+    "isEntry": true,
+    "imports": [
+      "_useAddressData-CKC0JZ_p.js",
+      "_client-DktmajSW.js"
+    ]
+  },
+  "src/main-checkout.tsx": {
+    "file": "checkout.js",
+    "name": "checkout",
+    "src": "src/main-checkout.tsx",
+    "isEntry": true,
+    "imports": [
+      "_client-DktmajSW.js"
+    ]
+  }
+}

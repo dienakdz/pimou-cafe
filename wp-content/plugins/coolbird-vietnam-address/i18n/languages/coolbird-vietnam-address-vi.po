@@ -1,0 +1,535 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-02 10:01+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: coolbird-vietnam-address-for-woocommerce.php:367 coolbird-vietnam-address-for-woocommerce.php:368
+msgid "Vietnam Address Woo"
+msgstr "Vietnam Address Woo"
+
+#: coolbird-vietnam-address-for-woocommerce.php:412 coolbird-vietnam-address-for-woocommerce.php:1168
+msgid "Full name"
+msgstr "Họ và tên"
+
+#: coolbird-vietnam-address-for-woocommerce.php:413 coolbird-vietnam-address-for-woocommerce.php:1169
+msgctxt "placeholder"
+msgid "Type Full name"
+msgstr "Nhập họ và tên"
+
+#: coolbird-vietnam-address-for-woocommerce.php:422
+msgid "Type your phone"
+msgstr "Nhập số điện thoại"
+
+#: coolbird-vietnam-address-for-woocommerce.php:426
+msgid "Type your email"
+msgstr "Nhập địa chỉ email"
+
+#: coolbird-vietnam-address-for-woocommerce.php:429 coolbird-vietnam-address-for-woocommerce.php:506
+#: coolbird-vietnam-address-for-woocommerce.php:1116 coolbird-vietnam-address-for-woocommerce.php:1245
+#: coolbird-vietnam-address-for-woocommerce.php:1316
+msgid "Province/City"
+msgstr "Tỉnh/thành phố"
+
+#: coolbird-vietnam-address-for-woocommerce.php:433 coolbird-vietnam-address-for-woocommerce.php:510
+msgctxt "placeholder"
+msgid "Select Province/City"
+msgstr "Chọn Tỉnh/thành phố"
+
+#: coolbird-vietnam-address-for-woocommerce.php:434 coolbird-vietnam-address-for-woocommerce.php:511
+msgid "Select Province/City"
+msgstr "Chọn Tỉnh/thành phố"
+
+#: coolbird-vietnam-address-for-woocommerce.php:438 coolbird-vietnam-address-for-woocommerce.php:515
+#: coolbird-vietnam-address-for-woocommerce.php:1122 coolbird-vietnam-address-for-woocommerce.php:1179
+#: coolbird-vietnam-address-for-woocommerce.php:1250 coolbird-vietnam-address-for-woocommerce.php:1321
+msgid "District"
+msgstr "Quận/Huyện"
+
+#: coolbird-vietnam-address-for-woocommerce.php:442 coolbird-vietnam-address-for-woocommerce.php:519
+#: coolbird-vietnam-address-for-woocommerce.php:1184
+msgctxt "placeholder"
+msgid "Select District"
+msgstr "Chọn Quận/Huyện"
+
+#: coolbird-vietnam-address-for-woocommerce.php:448 coolbird-vietnam-address-for-woocommerce.php:525
+msgctxt "placeholder"
+msgid "Ex: No. 20, 90 Alley"
+msgstr "Ví dụ: Số 20, Ngõ 90"
+
+#: coolbird-vietnam-address-for-woocommerce.php:470 coolbird-vietnam-address-for-woocommerce.php:539
+#: coolbird-vietnam-address-for-woocommerce.php:1136 coolbird-vietnam-address-for-woocommerce.php:1192
+#: coolbird-vietnam-address-for-woocommerce.php:1257
+msgid "Ward/Commune"
+msgstr "Phường/Xã"
+
+#: coolbird-vietnam-address-for-woocommerce.php:474 coolbird-vietnam-address-for-woocommerce.php:543
+#: coolbird-vietnam-address-for-woocommerce.php:1197
+msgctxt "placeholder"
+msgid "Select Ward/Commune"
+msgstr "Chọn Phường/Xã"
+
+#: coolbird-vietnam-address-for-woocommerce.php:486
+msgid "Recipient full name"
+msgstr "Tên đầy đủ của người nhận"
+
+#: coolbird-vietnam-address-for-woocommerce.php:487
+msgctxt "placeholder"
+msgid "Recipient full name"
+msgstr "Tên đầy đủ của người nhận"
+
+#: coolbird-vietnam-address-for-woocommerce.php:495
+msgid "Recipient phone"
+msgstr "Số điện thoại người nhận"
+
+#: coolbird-vietnam-address-for-woocommerce.php:496
+msgctxt "placeholder"
+msgid "Recipient phone"
+msgstr "Số điện thoại người nhận"
+
+#: coolbird-vietnam-address-for-woocommerce.php:637 coolbird-vietnam-address-for-woocommerce.php:979
+#: coolbird-vietnam-address-for-woocommerce.php:991 coolbird-vietnam-address-for-woocommerce.php:1006
+msgid "No value"
+msgstr "Không có giá trị"
+
+#: coolbird-vietnam-address-for-woocommerce.php:638
+msgid "Phone number is incorrect"
+msgstr "Số điện thoại không đúng"
+
+#: coolbird-vietnam-address-for-woocommerce.php:639
+msgid "Loading..."
+msgstr "Đang tải..."
+
+#: coolbird-vietnam-address-for-woocommerce.php:640
+msgid "Phone number does not exist"
+msgstr "Số điện thoại không tồn tại"
+
+#: coolbird-vietnam-address-for-woocommerce.php:923
+msgid "Phone number of the recipient"
+msgstr "Số điện thoại của người nhận"
+
+#: coolbird-vietnam-address-for-woocommerce.php:933
+msgid "Shipping Phone:"
+msgstr "Số điện thoại người nhận:"
+
+#: coolbird-vietnam-address-for-woocommerce.php:999
+msgid "Delete the selected boxes?"
+msgstr "Xóa các hộp đã chọn?"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1093
+msgid "Settings"
+msgstr "Cài đặt"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1226 coolbird-vietnam-address-for-woocommerce.php:1297
+msgid "First name"
+msgstr "Tên"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1230 coolbird-vietnam-address-for-woocommerce.php:1301
+msgid "Last name"
+msgstr "Họ"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1234 coolbird-vietnam-address-for-woocommerce.php:1305
+msgid "Company"
+msgstr "Công ty"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1238 coolbird-vietnam-address-for-woocommerce.php:1309
+msgid "Country"
+msgstr "Quốc gia"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1242 coolbird-vietnam-address-for-woocommerce.php:1313
+msgid "Select a country&hellip;"
+msgstr "Chọn quốc gia&hellip;"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1254 coolbird-vietnam-address-for-woocommerce.php:1325
+msgid "Select District&hellip;"
+msgstr "Chọn Quận/Huyện&hellip;"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1261
+msgid "Select Ward/Commune&hellip;"
+msgstr "Chọn Phường/Xã&hellip;"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1264 coolbird-vietnam-address-for-woocommerce.php:1328
+msgid "Address line 1"
+msgstr "Địa chỉ"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1268
+msgid "Email address"
+msgstr "Địa chỉ email"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1271
+msgid "Phone"
+msgstr "Số điện thoại"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1349 coolbird-vietnam-address-for-woocommerce.php:1403
+msgid "Choose an option"
+msgstr "Chọn một tùy chọn"
+
+#: coolbird-vietnam-address-for-woocommerce.php:1355
+msgid "required"
+msgstr "bắt buộc"
+
+#: includes/class-coolbirdzik-shipping-admin.php:49
+#: includes/class-vncheckout-shipping-admin.php:39
+msgid "Vietnam Shipping Rates"
+msgstr "Cước phí vận chuyển Việt Nam"
+
+#: includes/class-coolbirdzik-shipping-admin.php:50
+#: includes/class-vncheckout-shipping-admin.php:40
+msgid "Shipping Rates"
+msgstr "Cước phí vận chuyển"
+
+#: includes/class-coolbirdzik-shipping-admin.php:69
+msgid ""
+"Vietnam Shipping Rates: frontend assets not found. Run `npm run build` "
+"inside the frontend/ directory."
+msgstr "Cước phí vận chuyển Việt Nam: không tìm thấy tài nguyên frontend. Hãy chạy `npm run build` trong thư mục frontend/."
+
+#: includes/class-vncheckout-region-manager.php:125
+msgid "Region name and code are required."
+msgstr "Tên vùng và mã vùng là bắt buộc."
+
+#: includes/class-vncheckout-region-manager.php:145
+msgid "Predefined regions cannot be modified."
+msgstr "Các vùng định sẵn không thể sửa đổi."
+
+#: includes/class-vncheckout-region-manager.php:154
+msgid "A region with that code already exists."
+msgstr "Một vùng với mã này đã tồn tại."
+
+#: includes/class-vncheckout-region-manager.php:179
+msgid "Region not found."
+msgstr "Không tìm thấy vùng."
+
+#: includes/class-vncheckout-region-manager.php:183
+msgid "Predefined regions cannot be deleted."
+msgstr "Các vùng định sẵn không thể xóa."
+
+#: includes/class-vncheckout-shipping-method.php:31
+msgid "Vietnam Shipping Calculator"
+msgstr "Tính phí vận chuyển Việt Nam"
+
+#: includes/class-vncheckout-shipping-method.php:33
+msgid ""
+"Shipping fees based on Vietnam province/district/ward, order total, and "
+"weight."
+msgstr "Phí vận chuyển dựa trên tỉnh/quận/phường, tổng đơn hàng và cân nặng."
+
+#: includes/class-vncheckout-shipping-method.php:61
+msgid "Enable/Disable"
+msgstr "Bật/Tắt"
+
+#: includes/class-vncheckout-shipping-method.php:63
+msgid "Enable this shipping method"
+msgstr "Bật phương thức vận chuyển này"
+
+#: includes/class-vncheckout-shipping-method.php:67
+msgid "Method Title"
+msgstr "Tên phương thức"
+
+#: includes/class-vncheckout-shipping-method.php:69
+msgid "Title displayed during checkout."
+msgstr "Tên hiển thị khi thanh toán."
+
+#: includes/class-vncheckout-shipping-method.php:70
+msgid "Vietnam Shipping"
+msgstr "Vận chuyển Việt Nam"
+
+#: includes/class-vncheckout-shipping-method.php:74
+msgid "Default Shipping Rate"
+msgstr "Phí vận chuyển mặc định"
+
+#: includes/class-vncheckout-shipping-method.php:76
+msgid "Fallback rate (VND) when no location rule matches."
+msgstr "Phí dự phòng (VND) khi không có quy tắc địa lý nào khớp."
+
+#: includes/class-vncheckout-shipping-method.php:81
+msgid "Manage Rates"
+msgstr "Quản lý cước phí"
+
+#. translators: %s: URL to the rate manager page
+#: includes/class-vncheckout-shipping-method.php:85
+#, php-format
+msgid ""
+"Configure shipping rates by region, province, district, and ward on the <a "
+"href=\"%s\" style=\"font-weight:600\">Shipping Rates</a> page (WooCommerce → "
+"Shipping Rates)."
+msgstr "Cấu hình cước phí vận chuyển theo vùng, tỉnh, quận và phường trên trang <a href=\"%s\" style=\"font-weight:600\">Cước phí vận chuyển</a> (WooCommerce → Cước phí vận chuyển)."
+
+#: includes/class-vncheckout-vnd-paypal-standard.php:82
+#, php-format
+msgid ""
+"The prices will be converted to %1$s in the PayPal pages with the exchange "
+"rate %2$s."
+msgstr ""
+
+#: includes/options-page.php:4
+msgid ""
+"Fine-tune how Vietnamese addresses, currency conversion and advanced "
+"checkout helpers behave in your store."
+msgstr "Tinh chỉnh cách địa chỉ Việt Nam, chuyển đổi tiền tệ và các công cụ hỗ trợ thanh toán hoạt động trong cửa hàng của bạn."
+
+#: includes/options-page.php:17
+msgid "Currency & conversion"
+msgstr "Tiền tệ & chuyển đổi"
+
+#: includes/options-page.php:19
+msgid ""
+"Control currency formatting, volumetric weight and VNĐ ↔ foreign currency "
+"conversion."
+msgstr "Kiểm soát định dạng tiền tệ, trọng lượng quy đổi và chuyển đổi VNĐ ↔ ngoại tệ."
+
+#: includes/options-page.php:24
+msgid "Convert ₫ to VNĐ"
+msgstr "Chuyển ₫ sang VNĐ"
+
+#: includes/options-page.php:26
+msgid "Allow conversion to VNĐ"
+msgstr "Cho phép chuyển sang VNĐ"
+
+#: includes/options-page.php:30
+msgid "Remove shipping title"
+msgstr "Loại bỏ tiêu đề vận chuyển"
+
+#: includes/options-page.php:32
+msgid "Completely remove shipping method title"
+msgstr "Loại bỏ hoàn toàn tiêu đề của phương thức vận chuyển"
+
+#: includes/options-page.php:36
+msgid "Hide methods when free shipping available"
+msgstr "Ẩn phương thức khi có free-shipping"
+
+#: includes/options-page.php:38
+msgid "Hide all other shipping methods when free shipping is available"
+msgstr "Ẩn tất cả những phương thức vận chuyển khác khi có miễn phí vận chuyển"
+
+#: includes/options-page.php:42 includes/options-page.php:99
+msgid "Conversion rate"
+msgstr "Số quy đổi"
+
+#: includes/options-page.php:45
+msgid "Conversion quotient. Default by Viettel Post is 6000"
+msgstr "Thương số quy đổi. Mặc định theo Viettel Post là 6000"
+
+#: includes/options-page.php:49
+msgid "Enable VNĐ to USD conversion"
+msgstr "Kích hoạt chuyển đổi VNĐ sang USD"
+
+#: includes/options-page.php:51
+msgid "Enable VNĐ to USD conversion to use PayPal"
+msgstr "Kích hoạt chuyển đổi VNĐ sang USD để có thể sử dụng paypal"
+
+#: includes/options-page.php:55
+msgid "VNĐ converted to currency"
+msgstr "VNĐ quy đổi sang tiền"
+
+#: includes/options-page.php:102
+msgid "Exchange rate from VNĐ"
+msgstr "Tỷ giá quy đổi từ VNĐ"
+
+#: includes/options-page.php:108
+msgid "Alepay & billing fields"
+msgstr "Alepay & trường thanh toán"
+
+#: includes/options-page.php:110
+msgid ""
+"Configure additional billing fields required by Alepay and other gateways."
+msgstr "Cấu hình thêm các trường thanh toán cần thiết cho Alepay và các cổng khác."
+
+#: includes/options-page.php:116
+msgid "Alepay"
+msgstr "Alepay"
+
+#: includes/options-page.php:118
+msgid "Show First Name field"
+msgstr "Hiển thị trường First Name"
+
+#: includes/options-page.php:119 includes/options-page.php:126
+msgid "Required for Alepay payment."
+msgstr "Để thanh toán qua Alepay bắt buộc phải có first_name."
+
+#: includes/options-page.php:125
+msgid "Show Country field"
+msgstr "Hiển thị trường Quốc Gia"
+
+#: includes/options-page.php:132
+msgid "Show Postcode field"
+msgstr "Hiện trường Postcode"
+
+#: includes/options-page.php:133
+msgid "Required for Alepay Tokenization payment."
+msgstr "Nếu sử dụng kiểu thanh toán \"Tokenization\" của Alepay thì bắt buộc cần Postcode."
+
+#: includes/options-page.php:139
+msgid "Vietnam address layout"
+msgstr "Kiểu địa chỉ Việt Nam"
+
+#: includes/options-page.php:141
+msgid ""
+"Choose how provinces, districts and wards are shown on checkout and account "
+"pages."
+msgstr "Chọn cách hiển thị Tỉnh/Thành, Quận/Huyện và Phường/Xã trên trang thanh toán và tài khoản."
+
+#: includes/options-page.php:147
+msgid "Vietnam Address Format"
+msgstr "Kiểu địa chỉ Việt Nam"
+
+#: includes/options-page.php:152
+msgid "Old format: Province/City → District → Ward/Commune"
+msgstr "Địa chỉ cũ: Tỉnh/Thành → Quận/Huyện → Phường/Xã"
+
+#: includes/options-page.php:157
+msgid "New format: Province/City → Ward/Commune (District hidden)"
+msgstr "Địa chỉ mới: Tỉnh/Thành → Phường/Xã (không hiển thị Quận/Huyện)"
+
+#: includes/options-page.php:163 includes/options-page.php:165
+msgid "Hide Ward/Commune field"
+msgstr "Ẩn mục phường/xã"
+
+#: includes/options-page.php:166
+msgid "Hide Ward/Commune/Town field in checkout form. Default is shown."
+msgstr "Ẩn ô chọn xã/phường/thị trấn trong form thanh toán. Mặc định ô này hiển thị."
+
+#: includes/options-page.php:170 includes/options-page.php:172
+msgid "Ward/Commune is NOT required"
+msgstr "KHÔNG bắt buộc nhập phường/xã"
+
+#: includes/options-page.php:173
+msgid "When Ward/Commune field is shown, it is optional."
+msgstr "Khi hiển thị ô phường/xã, người dùng không bắt buộc phải điền."
+
+#: includes/options-page.php:179
+msgid "Order management"
+msgstr "Quản lý đơn hàng"
+
+#: includes/options-page.php:181
+msgid "Extra filters for quickly finding orders by province and date."
+msgstr "Bộ lọc bổ sung để tìm nhanh đơn hàng theo tỉnh và ngày."
+
+#: includes/options-page.php:187
+msgid "Filter"
+msgstr "Bộ lọc"
+
+#: includes/options-page.php:189
+msgid "Enable filter"
+msgstr "Kích hoạt bộ lọc"
+
+#: includes/options-page.php:190
+msgid "Enable filter by province and date in order list page"
+msgstr "Kích hoạt bộ lọc theo tỉnh thành và ngày tháng trong trang danh sách order"
+
+#: includes/options-page.php
+msgid "Address"
+msgstr "Địa chỉ"
+
+#: includes/options-page.php
+msgid "Currency & Shipping"
+msgstr "Tiền tệ & Vận chuyển"
+
+#: includes/options-page.php
+msgid "Checkout Fields"
+msgstr "Trường thanh toán"
+
+#: includes/options-page.php
+msgid "Order Management"
+msgstr "Quản lý đơn hàng"
+
+#: includes/options-page.php
+msgid "Vietnam Address Layout"
+msgstr "Bố cục địa chỉ Việt Nam"
+
+#: includes/options-page.php
+msgid "Address Format"
+msgstr "Định dạng địa chỉ"
+
+#: includes/options-page.php
+msgid "Old Format"
+msgstr "Định dạng cũ"
+
+#: includes/options-page.php
+msgid "New Format"
+msgstr "Định dạng mới"
+
+#: includes/options-page.php
+msgid "Province/City → District → Ward/Commune"
+msgstr "Tỉnh/Thành → Quận/Huyện → Phường/Xã"
+
+#: includes/options-page.php
+msgid "Province/City → Ward/Commune (District hidden)"
+msgstr "Tỉnh/Thành → Phường/Xã (Ẩn Quận/Huyện)"
+
+#: includes/options-page.php
+msgid "Hide Ward/Commune Field"
+msgstr "Ẩn trường Phường/Xã"
+
+#: includes/options-page.php
+msgid "Ward/Commune is NOT Required"
+msgstr "Phường/Xã không bắt buộc"
+
+#: includes/options-page.php
+msgid "Currency & Conversion"
+msgstr "Tiền tệ & Chuyển đổi"
+
+#: includes/options-page.php
+msgid "Conversion Quotient"
+msgstr "Hệ số quy đổi"
+
+#: includes/options-page.php
+msgid "PayPal Conversion"
+msgstr "Chuyển đổi PayPal"
+
+#: includes/options-page.php
+msgid "Enable VNĐ to USD Conversion"
+msgstr "Kích hoạt chuyển đổi VNĐ sang USD"
+
+#: includes/options-page.php
+msgid "Target Currency"
+msgstr "Tiền tệ đích"
+
+#: includes/options-page.php
+msgid "Shipping Options"
+msgstr "Tùy chọn vận chuyển"
+
+#: includes/options-page.php
+msgid "Remove Shipping Title"
+msgstr "Loại bỏ tiêu đề vận chuyển"
+
+#: includes/options-page.php
+msgid "Hide Methods When Free Shipping Available"
+msgstr "Ẩn phương thức khi có giao hàng miễn phí"
+
+#: includes/options-page.php
+msgid "Alepay & Billing Fields"
+msgstr "Alepay & Trường thanh toán"
+
+#: includes/options-page.php
+msgid "Show First Name Field"
+msgstr "Hiển thị trường Tên"
+
+#: includes/options-page.php
+msgid "Show Country Field"
+msgstr "Hiển thị trường Quốc gia"
+
+#: includes/options-page.php
+msgid "Show Postcode Field"
+msgstr "Hiển thị trường Mã bưu điện"
+
+#: includes/options-page.php
+msgid "Enable Order Filter"
+msgstr "Kích hoạt bộ lọc đơn hàng"
+
+#: includes/options-page.php
+msgid "Save Changes"
+msgstr "Lưu thay đổi"
