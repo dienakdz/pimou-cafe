@@ -140,14 +140,7 @@ add_action( 'woocommerce_before_shop_loop', 'pimou_wc_loop_wrapper_end', 35 );
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 
-function pimou_wc_product_actions() {
-	echo '<div class="pimou-product-contact">';
-	echo '<a class="pimou-btn pimou-btn-zalo" href="' . esc_url( pimou_get_zalo_url() ) . '" target="_blank" rel="noopener">' . esc_html__( 'Nhắn Zalo', 'pimou-theme' ) . '</a>';
-	echo '</div>';
-}
-add_action( 'woocommerce_single_product_summary', 'pimou_wc_product_actions', 35 );
-
-function pimou_buy_now_button() {
+function pimou_product_cart_actions() {
 	global $product;
 
 	if ( ! $product instanceof WC_Product ) {
@@ -155,9 +148,10 @@ function pimou_buy_now_button() {
 	}
 
 	echo '<input type="hidden" name="pimou_buy_now" value="">';
+	echo '<a class="pimou-btn pimou-btn-zalo pimou-product-zalo-button" href="' . esc_url( pimou_get_zalo_url() ) . '" target="_blank" rel="noopener">' . esc_html__( 'Nhắn Zalo', 'pimou-theme' ) . '</a>';
 	echo '<button type="submit" name="add-to-cart" value="' . esc_attr( $product->get_id() ) . '" class="pimou-buy-now-button button alt" onclick="this.form.pimou_buy_now.value=\'1\';">' . esc_html__( 'Mua ngay', 'pimou-theme' ) . '</button>';
 }
-add_action( 'woocommerce_after_add_to_cart_button', 'pimou_buy_now_button' );
+add_action( 'woocommerce_after_add_to_cart_button', 'pimou_product_cart_actions' );
 
 function pimou_buy_now_redirect( $url ) {
 	if ( ! empty( $_REQUEST['pimou_buy_now'] ) && function_exists( 'wc_get_checkout_url' ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended

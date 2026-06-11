@@ -8,8 +8,7 @@
 get_header();
 
 $shop_url              = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/' );
-$banner_image          = pimou_get_banner_image_url();
-$banner_link           = pimou_get_banner_link_url();
+$home_banners          = pimou_get_home_banners();
 $home_categories       = pimou_home_product_categories( pimou_get_home_category_limit() );
 $products_per_category = pimou_get_home_products_per_category();
 $feature_items         = pimou_feature_items();
@@ -17,18 +16,42 @@ $feature_items         = pimou_feature_items();
 <main id="primary" class="site-main">
 	<section class="hero">
 		<div class="pimou-container">
-			<?php if ( $banner_link ) : ?>
-				<a class="home-banner<?php echo $banner_image ? ' home-banner-has-image' : ''; ?>" href="<?php echo esc_url( $banner_link ); ?>" aria-label="<?php esc_attr_e( 'Banner khuyến mãi', 'pimou-theme' ); ?>">
-					<?php if ( $banner_image ) : ?>
-						<img src="<?php echo esc_url( $banner_image ); ?>" alt="<?php esc_attr_e( 'Banner khuyến mãi', 'pimou-theme' ); ?>">
-					<?php endif; ?>
-				</a>
-			<?php else : ?>
-				<div class="home-banner<?php echo $banner_image ? ' home-banner-has-image' : ''; ?>" role="img" aria-label="<?php esc_attr_e( 'Banner khuyến mãi', 'pimou-theme' ); ?>">
-					<?php if ( $banner_image ) : ?>
-						<img src="<?php echo esc_url( $banner_image ); ?>" alt="<?php esc_attr_e( 'Banner khuyến mãi', 'pimou-theme' ); ?>">
-					<?php endif; ?>
+			<?php if ( count( $home_banners ) > 1 ) : ?>
+				<div class="home-banner home-banner-slider home-banner-has-image" data-banner-slider>
+					<div class="home-banner-track">
+						<?php foreach ( $home_banners as $index => $banner ) : ?>
+							<?php if ( $banner['link'] ) : ?>
+								<a class="home-banner-slide" href="<?php echo esc_url( $banner['link'] ); ?>" aria-label="<?php echo esc_attr( sprintf( __( 'Banner khuyến mãi %d', 'pimou-theme' ), $index + 1 ) ); ?>">
+									<img src="<?php echo esc_url( $banner['image'] ); ?>" alt="<?php echo esc_attr( sprintf( __( 'Banner khuyến mãi %d', 'pimou-theme' ), $index + 1 ) ); ?>">
+								</a>
+							<?php else : ?>
+								<div class="home-banner-slide" role="img" aria-label="<?php echo esc_attr( sprintf( __( 'Banner khuyến mãi %d', 'pimou-theme' ), $index + 1 ) ); ?>">
+									<img src="<?php echo esc_url( $banner['image'] ); ?>" alt="<?php echo esc_attr( sprintf( __( 'Banner khuyến mãi %d', 'pimou-theme' ), $index + 1 ) ); ?>">
+								</div>
+							<?php endif; ?>
+						<?php endforeach; ?>
+					</div>
+					<button class="home-banner-control home-banner-prev" type="button" aria-label="<?php esc_attr_e( 'Banner trước', 'pimou-theme' ); ?>"></button>
+					<button class="home-banner-control home-banner-next" type="button" aria-label="<?php esc_attr_e( 'Banner tiếp theo', 'pimou-theme' ); ?>"></button>
+					<div class="home-banner-dots" aria-label="<?php esc_attr_e( 'Chọn banner', 'pimou-theme' ); ?>">
+						<?php foreach ( $home_banners as $index => $banner ) : ?>
+							<button type="button" class="<?php echo 0 === $index ? 'is-active' : ''; ?>" aria-label="<?php echo esc_attr( sprintf( __( 'Xem banner %d', 'pimou-theme' ), $index + 1 ) ); ?>"></button>
+						<?php endforeach; ?>
+					</div>
 				</div>
+			<?php elseif ( count( $home_banners ) === 1 ) : ?>
+				<?php $banner = $home_banners[0]; ?>
+				<?php if ( $banner['link'] ) : ?>
+					<a class="home-banner home-banner-has-image" href="<?php echo esc_url( $banner['link'] ); ?>" aria-label="<?php esc_attr_e( 'Banner khuyến mãi', 'pimou-theme' ); ?>">
+						<img src="<?php echo esc_url( $banner['image'] ); ?>" alt="<?php esc_attr_e( 'Banner khuyến mãi', 'pimou-theme' ); ?>">
+					</a>
+				<?php else : ?>
+					<div class="home-banner home-banner-has-image" role="img" aria-label="<?php esc_attr_e( 'Banner khuyến mãi', 'pimou-theme' ); ?>">
+						<img src="<?php echo esc_url( $banner['image'] ); ?>" alt="<?php esc_attr_e( 'Banner khuyến mãi', 'pimou-theme' ); ?>">
+					</div>
+				<?php endif; ?>
+			<?php else : ?>
+				<div class="home-banner" role="img" aria-label="<?php esc_attr_e( 'Banner khuyến mãi', 'pimou-theme' ); ?>"></div>
 			<?php endif; ?>
 		</div>
 	</section>

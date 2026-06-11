@@ -47,33 +47,39 @@ function pimou_theme_customize_register( $wp_customize ) {
 		) );
 	}
 
-	$wp_customize->add_setting( 'pimou_banner_image', array(
-		'default'           => '',
-		'sanitize_callback' => 'esc_url_raw',
-	) );
+	for ( $banner_index = 1; $banner_index <= 5; $banner_index++ ) {
+		$image_setting = 1 === $banner_index ? 'pimou_banner_image' : 'pimou_banner_image_' . $banner_index;
+		$link_setting  = 1 === $banner_index ? 'pimou_banner_link' : 'pimou_banner_link_' . $banner_index;
 
-	$wp_customize->add_control(
-		new WP_Customize_Image_Control(
-			$wp_customize,
-			'pimou_banner_image',
-			array(
-				'label'   => __( 'Banner image', 'pimou-theme' ),
-				'section' => 'pimou_homepage',
+		$wp_customize->add_setting( $image_setting, array(
+			'default'           => '',
+			'sanitize_callback' => 'esc_url_raw',
+		) );
+
+		$wp_customize->add_control(
+			new WP_Customize_Image_Control(
+				$wp_customize,
+				$image_setting,
+				array(
+					'label'       => sprintf( __( 'Banner %d image', 'pimou-theme' ), $banner_index ),
+					'description' => 1 === $banner_index ? __( 'Add one image for a static banner, or add more images to turn this area into a looping banner.', 'pimou-theme' ) : '',
+					'section'     => 'pimou_homepage',
+				)
 			)
-		)
-	);
+		);
 
-	$wp_customize->add_setting( 'pimou_banner_link', array(
-		'default'           => '',
-		'sanitize_callback' => 'esc_url_raw',
-	) );
+		$wp_customize->add_setting( $link_setting, array(
+			'default'           => '',
+			'sanitize_callback' => 'esc_url_raw',
+		) );
 
-	$wp_customize->add_control( 'pimou_banner_link', array(
-		'label'       => __( 'Banner link', 'pimou-theme' ),
-		'description' => __( 'Optional URL opened when customers click the homepage banner.', 'pimou-theme' ),
-		'section'     => 'pimou_homepage',
-		'type'        => 'url',
-	) );
+		$wp_customize->add_control( $link_setting, array(
+			'label'       => sprintf( __( 'Banner %d link', 'pimou-theme' ), $banner_index ),
+			'description' => 1 === $banner_index ? __( 'Optional URL opened when customers click the homepage banner.', 'pimou-theme' ) : '',
+			'section'     => 'pimou_homepage',
+			'type'        => 'url',
+		) );
+	}
 
 	$wp_customize->add_setting( 'pimou_home_category_limit', array(
 		'default'           => 4,

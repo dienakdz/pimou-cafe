@@ -316,6 +316,82 @@ textarea {
 	object-fit: cover;
 }
 
+.home-banner-track {
+	display: flex;
+	height: 100%;
+	transition: transform 0.45s ease;
+}
+
+.home-banner-slide {
+	display: block;
+	flex: 0 0 100%;
+	height: 100%;
+}
+
+.home-banner-control {
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	width: 42px;
+	height: 42px;
+	border: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: var(--pimou-shadow);
+	cursor: pointer;
+	transform: translateY(-50%);
+}
+
+.home-banner-control::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid var(--pimou-green);
+	border-left: 2px solid var(--pimou-green);
+	content: "";
+}
+
+.home-banner-prev {
+	left: 16px;
+}
+
+.home-banner-prev::before {
+	transform: translate(-35%, -50%) rotate(-45deg);
+}
+
+.home-banner-next {
+	right: 16px;
+}
+
+.home-banner-next::before {
+	transform: translate(-65%, -50%) rotate(135deg);
+}
+
+.home-banner-dots {
+	position: absolute;
+	right: 18px;
+	bottom: 16px;
+	z-index: 2;
+	display: flex;
+	gap: 8px;
+}
+
+.home-banner-dots button {
+	width: 9px;
+	height: 9px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.68);
+	cursor: pointer;
+}
+
+.home-banner-dots button.is-active {
+	background: var(--pimou-green);
+}
+
 .eyebrow {
 	margin: 0 0 10px;
 	color: var(--pimou-green);
@@ -1017,6 +1093,7 @@ textarea {
 }
 
 .woocommerce div.product form.cart .single_add_to_cart_button,
+.woocommerce div.product form.cart .pimou-product-zalo-button,
 .woocommerce div.product form.cart .pimou-buy-now-button {
 	min-height: 44px;
 	margin-left: 8px;
@@ -1024,6 +1101,10 @@ textarea {
 }
 
 .woocommerce div.product form.cart .pimou-buy-now-button {
+	display: flex;
+	clear: both;
+	width: fit-content;
+	margin: 10px 0 0;
 	background: var(--pimou-green);
 	color: var(--pimou-white) !important;
 }
@@ -1520,7 +1601,9 @@ textarea {
 	}
 
 	.woocommerce div.product form.cart .single_add_to_cart_button,
+	.woocommerce div.product form.cart .pimou-product-zalo-button,
 	.woocommerce div.product form.cart .pimou-buy-now-button {
+		width: 100%;
 		margin: 8px 0 0;
 	}
 

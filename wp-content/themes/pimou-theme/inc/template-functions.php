@@ -33,6 +33,27 @@ function pimou_get_banner_link_url() {
 	return get_theme_mod( 'pimou_banner_link', '' );
 }
 
+function pimou_get_home_banners() {
+	$banners = array();
+
+	for ( $banner_index = 1; $banner_index <= 5; $banner_index++ ) {
+		$image_setting = 1 === $banner_index ? 'pimou_banner_image' : 'pimou_banner_image_' . $banner_index;
+		$link_setting  = 1 === $banner_index ? 'pimou_banner_link' : 'pimou_banner_link_' . $banner_index;
+		$image         = get_theme_mod( $image_setting, '' );
+
+		if ( ! $image ) {
+			continue;
+		}
+
+		$banners[] = array(
+			'image' => $image,
+			'link'  => get_theme_mod( $link_setting, '' ),
+		);
+	}
+
+	return $banners;
+}
+
 function pimou_get_home_category_limit() {
 	return max( 1, min( 12, absint( get_theme_mod( 'pimou_home_category_limit', 4 ) ) ) );
 }

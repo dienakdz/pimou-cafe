@@ -89,6 +89,87 @@
 		});
 	}
 
+	function initBannerSliders() {
+		document.querySelectorAll('[data-banner-slider]').forEach(function (slider) {
+			if (slider.dataset.pimouSlider === 'ready') {
+				return;
+			}
+
+			var track = slider.querySelector('.home-banner-track');
+			var slides = slider.querySelectorAll('.home-banner-slide');
+			var prev = slider.querySelector('.home-banner-prev');
+			var next = slider.querySelector('.home-banner-next');
+			var dots = slider.querySelectorAll('.home-banner-dots button');
+			var current = 0;
+			var timer;
+
+			if (!track || slides.length < 2) {
+				return;
+			}
+
+			function showSlide(index) {
+				current = (index + slides.length) % slides.length;
+				track.style.transform = 'translateX(-' + current * 100 + '%)';
+
+				slides.forEach(function (slide, slideIndex) {
+					var isActive = slideIndex === current;
+					slide.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+
+					if (slide.matches('a, button, input, select, textarea')) {
+						slide.tabIndex = isActive ? 0 : -1;
+					}
+				});
+
+				dots.forEach(function (dot, dotIndex) {
+					dot.classList.toggle('is-active', dotIndex === current);
+				});
+			}
+
+			function start() {
+				stop();
+				timer = window.setInterval(function () {
+					showSlide(current + 1);
+				}, 5000);
+			}
+
+			function stop() {
+				if (timer) {
+					window.clearInterval(timer);
+				}
+			}
+
+			if (prev) {
+				prev.addEventListener('click', function () {
+					showSlide(current - 1);
+					start();
+				});
+			}
+
+			if (next) {
+				next.addEventListener('click', function () {
+					showSlide(current + 1);
+					start();
+				});
+			}
+
+			dots.forEach(function (dot, dotIndex) {
+				dot.addEventListener('click', function () {
+					showSlide(dotIndex);
+					start();
+				});
+			});
+
+			slider.addEventListener('mouseenter', stop);
+			slider.addEventListener('mouseleave', start);
+			slider.addEventListener('focusin', stop);
+			slider.addEventListener('focusout', start);
+
+			slider.dataset.pimouSlider = 'ready';
+			showSlide(0);
+			start();
+		});
+	}
+
 	if (toggle && nav) {
 		toggle.addEventListener('click', function () {
 			var isOpen = nav.classList.toggle('is-open');
@@ -109,6 +190,7 @@
 
 	translateWooBlocks(document.body);
 	buildVariationSwatches();
+	initBannerSliders();
 
 	var observer = new MutationObserver(function (mutations) {
 		mutations.forEach(function (mutation) {
