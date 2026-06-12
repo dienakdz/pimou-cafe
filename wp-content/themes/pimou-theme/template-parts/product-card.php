@@ -32,9 +32,10 @@ $categories = wc_get_product_category_list( $product_id, ', ' );
 		<h3><a href="<?php echo esc_url( get_permalink( $product_id ) ); ?>"><?php echo esc_html( $product->get_name() ); ?></a></h3>
 		<div class="product-price"><?php echo wp_kses_post( $product->get_price_html() ); ?></div>
 		<div class="product-card-actions">
-			<a class="pimou-btn pimou-btn-outline" href="<?php echo esc_url( get_permalink( $product_id ) ); ?>"><?php esc_html_e( 'Chi tiết', 'pimou-theme' ); ?></a>
 			<?php
 			if ( $product->is_purchasable() && $product->is_in_stock() && ! $product->is_type( 'variable' ) ) {
+				$buy_now_url = add_query_arg( 'pimou_buy_now', '1', $product->add_to_cart_url() );
+				echo '<a class="pimou-btn pimou-btn-outline" href="' . esc_url( $buy_now_url ) . '" rel="nofollow">' . esc_html__( 'Mua ngay', 'pimou-theme' ) . '</a>';
 				echo apply_filters(
 					'woocommerce_loop_add_to_cart_link',
 					sprintf(
@@ -47,12 +48,13 @@ $categories = wc_get_product_category_list( $product_id, ', ' );
 							'aria-label'       => $product->add_to_cart_description(),
 							'rel'              => 'nofollow',
 						) ),
-						esc_html( $product->add_to_cart_text() )
+						esc_html__( 'Giỏ hàng', 'pimou-theme' )
 					),
 					$product
 				);
 			} else {
-				echo '<a class="pimou-btn pimou-btn-primary" href="' . esc_url( get_permalink( $product_id ) ) . '">' . esc_html__( 'Chọn mua', 'pimou-theme' ) . '</a>';
+				echo '<a class="pimou-btn pimou-btn-outline" href="' . esc_url( get_permalink( $product_id ) ) . '">' . esc_html__( 'Mua ngay', 'pimou-theme' ) . '</a>';
+				echo '<a class="pimou-btn pimou-btn-primary" href="' . esc_url( get_permalink( $product_id ) ) . '">' . esc_html__( 'Giỏ hàng', 'pimou-theme' ) . '</a>';
 			}
 			?>
 		</div>

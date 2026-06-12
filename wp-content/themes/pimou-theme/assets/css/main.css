@@ -862,6 +862,73 @@ textarea {
 	letter-spacing: 0;
 }
 
+.pimou-product-social-proof {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0;
+	margin: 12px 0 18px;
+	color: var(--pimou-muted);
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.pimou-product-social-proof__item {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	min-height: 20px;
+	padding: 0 14px;
+	color: inherit;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.pimou-product-social-proof__item:first-child {
+	padding-left: 0;
+}
+
+.pimou-product-social-proof__item + .pimou-product-social-proof__item {
+	border-left: 1px solid var(--pimou-line);
+}
+
+.pimou-product-social-proof__value {
+	color: var(--pimou-ink);
+	font-weight: 800;
+}
+
+.pimou-product-social-proof__rating .pimou-product-social-proof__value {
+	color: var(--pimou-green);
+}
+
+.pimou-rating-stars {
+	--pimou-rating-percent: 0%;
+	position: relative;
+	display: inline-block;
+	width: 78px;
+	height: 16px;
+	overflow: hidden;
+	color: #d9d9d9;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 1px;
+}
+
+.pimou-rating-stars::before,
+.pimou-rating-stars::after {
+	content: "★★★★★";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.pimou-rating-stars::after {
+	width: var(--pimou-rating-percent);
+	overflow: hidden;
+	color: #ffb400;
+	white-space: nowrap;
+}
+
 .pimou-shop-toolbar {
 	display: flex;
 	align-items: center;
@@ -912,11 +979,16 @@ textarea {
 	gap: 44px;
 }
 
+.woocommerce div.product .pimou-product-media-column,
 .woocommerce div.product div.images,
 .woocommerce div.product div.summary {
 	float: none;
 	width: auto;
 	margin: 0;
+}
+
+.woocommerce div.product .pimou-product-media-column {
+	min-width: 0;
 }
 
 .woocommerce div.product div.images .woocommerce-product-gallery__image {
@@ -1017,6 +1089,56 @@ textarea {
 	pointer-events: none;
 }
 
+.pimou-product-trust-list {
+	margin-top: 16px;
+	padding: 18px 20px;
+	border-radius: 8px;
+	background: #fff8e8;
+	color: var(--pimou-ink);
+}
+
+.pimou-product-trust-list ul {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 14px 22px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.pimou-product-trust-list li {
+	display: grid;
+	grid-template-columns: 22px minmax(0, 1fr);
+	gap: 10px;
+	align-items: start;
+	min-width: 0;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1.35;
+}
+
+.pimou-product-trust-list__icon {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 22px;
+	margin-top: 1px;
+	background: #b8ad9d;
+	clip-path: polygon(50% 0, 88% 14%, 88% 48%, 50% 100%, 12% 48%, 12% 14%);
+}
+
+.pimou-product-trust-list__icon::after {
+	content: "";
+	position: absolute;
+	left: 6px;
+	top: 7px;
+	width: 8px;
+	height: 4px;
+	border-left: 2px solid var(--pimou-white);
+	border-bottom: 2px solid var(--pimou-white);
+	transform: rotate(-45deg);
+}
+
 .woocommerce div.product div.summary {
 	padding: 28px;
 	border: 1px solid var(--pimou-line);
@@ -1093,7 +1215,6 @@ textarea {
 }
 
 .woocommerce div.product form.cart .single_add_to_cart_button,
-.woocommerce div.product form.cart .pimou-product-zalo-button,
 .woocommerce div.product form.cart .pimou-buy-now-button {
 	min-height: 44px;
 	margin-left: 8px;
@@ -1498,6 +1619,10 @@ textarea {
 		grid-template-columns: 1fr;
 	}
 
+	.pimou-product-trust-list ul {
+		grid-template-columns: 1fr;
+	}
+
 	.woocommerce-checkout form.checkout {
 		grid-template-columns: 1fr;
 	}
@@ -1569,6 +1694,23 @@ textarea {
 		font-size: 28px;
 	}
 
+	.pimou-product-social-proof {
+		margin: 10px 0 16px;
+		font-size: 13px;
+	}
+
+	.pimou-product-social-proof__item {
+		padding: 0 10px;
+	}
+
+	.pimou-product-trust-list {
+		padding: 16px;
+	}
+
+	.pimou-product-trust-list li {
+		font-size: 14px;
+	}
+
 	.category-tile {
 		min-height: 185px;
 		padding: 22px;
@@ -1601,7 +1743,6 @@ textarea {
 	}
 
 	.woocommerce div.product form.cart .single_add_to_cart_button,
-	.woocommerce div.product form.cart .pimou-product-zalo-button,
 	.woocommerce div.product form.cart .pimou-buy-now-button {
 		width: 100%;
 		margin: 8px 0 0;

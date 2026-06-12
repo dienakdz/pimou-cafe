@@ -139,6 +139,88 @@ add_action( 'woocommerce_before_shop_loop', 'pimou_wc_loop_wrapper_end', 35 );
 
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
+
+function pimou_product_trust_list() {
+	echo '<div class="pimou-product-trust-list" aria-label="' . esc_attr__( 'Cam kết sản phẩm', 'pimou-theme' ) . '">';
+	echo '<ul>';
+	echo '<li><span class="pimou-product-trust-list__icon" aria-hidden="true"></span><span>' . esc_html__( 'Tiêu chuẩn sản xuất Quốc tế ISO 22000:2018', 'pimou-theme' ) . '</span></li>';
+	echo '<li><span class="pimou-product-trust-list__icon" aria-hidden="true"></span><span>' . esc_html__( 'Cam kết giá sỉ tốt nhất từ nhà sản xuất', 'pimou-theme' ) . '</span></li>';
+	echo '<li><span class="pimou-product-trust-list__icon" aria-hidden="true"></span><span>' . esc_html__( 'Cà phê nguyên hạt thơm ngon chuẩn vị', 'pimou-theme' ) . '</span></li>';
+	echo '<li><span class="pimou-product-trust-list__icon" aria-hidden="true"></span><span>' . esc_html__( 'Nguyên liệu nguồn gốc xuất xứ rõ ràng', 'pimou-theme' ) . '</span></li>';
+	echo '</ul>';
+	echo '</div>';
+}
+
+function pimou_product_media_column() {
+	echo '<div class="pimou-product-media-column">';
+	woocommerce_show_product_images();
+	pimou_product_trust_list();
+	echo '</div>';
+}
+add_action( 'woocommerce_before_single_product_summary', 'pimou_product_media_column', 20 );
+
+function pimou_format_compact_number( $number, $append_plus = false ) {
+	$number = max( 0, (int) $number );
+
+	if ( $number >= 1000000 ) {
+		$value     = $number / 1000000;
+		$precision = $value >= 10 ? 0 : 1;
+		$output    = number_format( $value, $precision, ',', '.' ) . 'tr';
+	} elseif ( $number >= 1000 ) {
+		$value     = $number / 1000;
+		$precision = $value >= 10 ? 0 : 1;
+		$output    = number_format( $value, $precision, ',', '.' ) . 'k';
+	} else {
+		$output = number_format_i18n( $number );
+	}
+
+	return $append_plus && $number >= 1000 ? $output . '+' : $output;
+}
+
+function pimou_product_social_proof() {
+	global $product;
+
+	if ( ! $product instanceof WC_Product ) {
+		return;
+	}
+
+	$average      = (float) $product->get_average_rating();
+	$review_count = (int) $product->get_review_count();
+	$sales_count  = (int) $product->get_total_sales();
+	$rating_width = $average > 0 ? min( 100, max( 0, ( $average / 5 ) * 100 ) ) : 0;
+	$rating_text  = number_format( $average, 1, '.', '' );
+	$reviews_id   = wc_reviews_enabled() ? '#reviews' : '';
+
+	echo '<div class="pimou-product-social-proof" aria-label="' . esc_attr__( 'Thông tin đánh giá và lượt bán', 'pimou-theme' ) . '">';
+	echo '<div class="pimou-product-social-proof__item pimou-product-social-proof__rating">';
+	echo '<span class="pimou-product-social-proof__value">' . esc_html( $rating_text ) . '</span>';
+	echo '<span class="pimou-rating-stars" style="--pimou-rating-percent:' . esc_attr( $rating_width ) . '%" aria-hidden="true"></span>';
+	echo '</div>';
+
+	if ( $reviews_id ) {
+		echo '<a class="pimou-product-social-proof__item" href="' . esc_url( $reviews_id ) . '">';
+	} else {
+		echo '<span class="pimou-product-social-proof__item">';
+	}
+
+	echo '<span class="pimou-product-social-proof__value">' . esc_html( pimou_format_compact_number( $review_count ) ) . '</span>';
+	echo '<span>' . esc_html__( 'Đánh giá', 'pimou-theme' ) . '</span>';
+
+	if ( $reviews_id ) {
+		echo '</a>';
+	} else {
+		echo '</span>';
+	}
+
+	echo '<div class="pimou-product-social-proof__item">';
+	echo '<span class="pimou-product-social-proof__value">' . esc_html( pimou_format_compact_number( $sales_count, true ) ) . '</span>';
+	echo '<span>' . esc_html__( 'Đã bán', 'pimou-theme' ) . '</span>';
+	echo '</div>';
+	echo '</div>';
+}
+add_action( 'woocommerce_single_product_summary', 'pimou_product_social_proof', 6 );
 
 function pimou_product_cart_actions() {
 	global $product;
@@ -148,7 +230,6 @@ function pimou_product_cart_actions() {
 	}
 
 	echo '<input type="hidden" name="pimou_buy_now" value="">';
-	echo '<a class="pimou-btn pimou-btn-zalo pimou-product-zalo-button" href="' . esc_url( pimou_get_zalo_url() ) . '" target="_blank" rel="noopener">' . esc_html__( 'Nhắn Zalo', 'pimou-theme' ) . '</a>';
 	echo '<button type="submit" name="add-to-cart" value="' . esc_attr( $product->get_id() ) . '" class="pimou-buy-now-button button alt" onclick="this.form.pimou_buy_now.value=\'1\';">' . esc_html__( 'Mua ngay', 'pimou-theme' ) . '</button>';
 }
 add_action( 'woocommerce_after_add_to_cart_button', 'pimou_product_cart_actions' );
