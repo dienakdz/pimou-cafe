@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PIMOU_THEME_VERSION', '1.0.19' );
+define( 'PIMOU_THEME_VERSION', '1.0.26' );
 
 $pimou_theme_includes = array(
 	'inc/theme-setup.php',

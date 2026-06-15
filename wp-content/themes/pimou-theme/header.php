@@ -22,7 +22,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 <header class="site-header">
 	<div class="top-bar">
 		<div class="pimou-container top-bar-inner">
-			<a class="top-bar-hotline" href="<?php echo esc_url( pimou_get_hotline_href() ); ?>"><?php esc_html_e( 'Hotline:', 'pimou-theme' ); ?> <?php echo esc_html( pimou_get_hotline() ); ?></a>
+			<a class="top-bar-hotline" href="<?php echo esc_url( pimou_get_hotline_href() ); ?>">
+				<span class="action-icon" aria-hidden="true">
+					<svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.7.6 4.1.6.7 0 1.2.5 1.2 1.2v3.5c0 .7-.5 1.2-1.2 1.2C10.3 22 2 13.7 2 3.3 2 2.5 2.5 2 3.3 2h3.5C7.5 2 8 2.5 8 3.3c0 1.4.2 2.8.6 4.1.1.4 0 .9-.3 1.2l-2.1 2.2z"/></svg>
+				</span>
+				<span><?php esc_html_e( 'Gọi hotline:', 'pimou-theme' ); ?> <?php echo esc_html( pimou_get_hotline() ); ?></span>
+			</a>
+			<a class="top-bar-cart" href="<?php echo esc_url( pimou_cart_link() ); ?>" aria-label="<?php esc_attr_e( 'Cart', 'pimou-theme' ); ?>">
+				<span class="action-icon" aria-hidden="true">
+					<svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.2 14h7.4c.8 0 1.5-.4 1.9-1.1L21 4H5.2L4.6 2H1v2h2.1l3.6 11.1c.2.6.8.9 1.4.9H19v-2H7.2z"/></svg>
+				</span>
+				<span><?php esc_html_e( 'Giỏ hàng', 'pimou-theme' ); ?></span>
+				<span class="pimou-cart-count"><?php echo esc_html( pimou_cart_count() ); ?></span>
+			</a>
 		</div>
 	</div>
 
@@ -50,21 +62,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 			}
 			?>
 		</nav>
-
-		<div class="header-actions">
-			<a class="header-call" href="<?php echo esc_url( pimou_get_hotline_href() ); ?>">
-				<span class="action-icon" aria-hidden="true">
-					<svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.7.6 4.1.6.7 0 1.2.5 1.2 1.2v3.5c0 .7-.5 1.2-1.2 1.2C10.3 22 2 13.7 2 3.3 2 2.5 2.5 2 3.3 2h3.5C7.5 2 8 2.5 8 3.3c0 1.4.2 2.8.6 4.1.1.4 0 .9-.3 1.2l-2.1 2.2z"/></svg>
-				</span>
-				<span><?php esc_html_e( 'Gọi nhanh', 'pimou-theme' ); ?></span>
-			</a>
-			<a class="header-zalo" href="<?php echo esc_url( pimou_get_zalo_url() ); ?>" target="_blank" rel="noopener">Zalo</a>
-			<a class="cart-link" href="<?php echo esc_url( pimou_cart_link() ); ?>" aria-label="<?php esc_attr_e( 'Cart', 'pimou-theme' ); ?>">
-				<span class="action-icon" aria-hidden="true">
-					<svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.2 14h7.4c.8 0 1.5-.4 1.9-1.1L21 4H5.2L4.6 2H1v2h2.1l3.6 11.1c.2.6.8.9 1.4.9H19v-2H7.2z"/></svg>
-				</span>
-				<span class="pimou-cart-count"><?php echo esc_html( pimou_cart_count() ); ?></span>
-			</a>
-		</div>
 	</div>
 </header>

@@ -89,6 +89,33 @@
 		});
 	}
 
+	function syncSingleProductPrice() {
+		document.querySelectorAll('form.variations_form').forEach(function (form) {
+			if (form.dataset.pimouPriceSync === 'ready') {
+				return;
+			}
+
+			var price = document.querySelector('.pimou-single-product-price');
+
+			if (!price) {
+				return;
+			}
+
+			var defaultHtml = price.innerHTML;
+			form.dataset.pimouPriceSync = 'ready';
+
+			jQuery(form).on('found_variation', function (event, variation) {
+				if (variation && variation.price_html) {
+					price.innerHTML = variation.price_html;
+				}
+			});
+
+			jQuery(form).on('reset_data hide_variation', function () {
+				price.innerHTML = defaultHtml;
+			});
+		});
+	}
+
 	function initBannerSliders() {
 		document.querySelectorAll('[data-banner-slider]').forEach(function (slider) {
 			if (slider.dataset.pimouSlider === 'ready') {
@@ -190,6 +217,7 @@
 
 	translateWooBlocks(document.body);
 	buildVariationSwatches();
+	syncSingleProductPrice();
 	initBannerSliders();
 
 	var observer = new MutationObserver(function (mutations) {
@@ -201,6 +229,7 @@
 			});
 		});
 		buildVariationSwatches();
+		syncSingleProductPrice();
 	});
 
 	observer.observe(document.body, { childList: true, subtree: true });

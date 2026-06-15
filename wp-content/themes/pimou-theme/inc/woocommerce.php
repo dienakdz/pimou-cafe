@@ -430,8 +430,36 @@ function pimou_woocommerce_sale_flash() {
 }
 add_filter( 'woocommerce_sale_flash', 'pimou_woocommerce_sale_flash' );
 
+function pimou_variable_price_lowest_only( $price, $product ) {
+	if ( ! is_product() ) {
+		return $price;
+	}
+
+	if ( ! $product instanceof WC_Product_Variable ) {
+		return $price;
+	}
+
+	$prices = $product->get_variation_prices( true );
+
+	if ( empty( $prices['price'] ) ) {
+		return $price;
+	}
+
+	$min_variation_id = array_search( min( $prices['price'] ), $prices['price'], true );
+	$min_price        = $prices['price'][ $min_variation_id ];
+	$regular_prices   = ! empty( $prices['regular_price'] ) ? $prices['regular_price'] : array();
+	$regular_price    = isset( $regular_prices[ $min_variation_id ] ) ? $regular_prices[ $min_variation_id ] : $min_price;
+
+	if ( $regular_price > $min_price ) {
+		return wc_format_sale_price( wc_price( $regular_price ), wc_price( $min_price ) );
+	}
+
+	return wc_price( $min_price );
+}
+add_filter( 'woocommerce_variable_price_html', 'pimou_variable_price_lowest_only', 10, 2 );
+
 function pimou_woocommerce_add_to_cart_text() {
-	return __( 'Thêm giỏ', 'pimou-theme' );
+	return __( 'Thêm vào giỏ hàng', 'pimou-theme' );
 }
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'pimou_woocommerce_add_to_cart_text' );
 add_filter( 'woocommerce_product_add_to_cart_text', 'pimou_woocommerce_add_to_cart_text' );

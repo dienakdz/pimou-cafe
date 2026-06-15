@@ -49,7 +49,7 @@ function pimou_theme_enqueue_assets() {
 	wp_enqueue_script(
 		'pimou-main',
 		get_template_directory_uri() . '/assets/js/main.js',
-		array(),
+		array( 'jquery' ),
 		PIMOU_THEME_VERSION,
 		true
 	);
